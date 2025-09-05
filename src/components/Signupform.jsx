@@ -5,9 +5,9 @@ const SignupForm = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // stop page reload
-    // here you could also save data in state/context/localStorage
-    navigate("/account"); // redirect to Account Settings
+    e.preventDefault();
+
+    navigate("/account");
   };
 
   return (

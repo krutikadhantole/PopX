@@ -13,7 +13,6 @@ const AccountSettings = () => {
 
         {/* Profile Info */}
         <div className="px-6 py-4 flex items-start space-x-4 ">
-          {/* Avatar */}
           <img
             src={girl}
             alt="Profile"
