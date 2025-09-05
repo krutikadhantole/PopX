@@ -7,7 +7,7 @@ const SignupForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    navigate("/account");
+    navigate("/AccountSetting");
   };
 
   return (
@@ -18,7 +18,7 @@ const SignupForm = () => {
           Create your PopX account
         </h2>
 
-        <form className="space-y-2">
+        <form onSubmit={handleSubmit} className="space-y-2">
           {/* Full Name */}
           <div>
             <label className="block text-sm font-medium text-gray-700">
