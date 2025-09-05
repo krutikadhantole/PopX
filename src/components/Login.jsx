@@ -4,6 +4,12 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    navigate("/AccountSetting");
+  };
+
   return (
     <div className="flex justify-center items-center min-h-screen bg-cream-50">
       <div className="bg-[#F7F8F9] w-80 h-135 p-6  shadow border border-gray-300 flex flex-col">
@@ -17,7 +23,7 @@ const Login = () => {
             </p>
           </div>
 
-          <form className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div>
               <label className="block text-xs font-semibold text-purple-600">
                 Email Address
